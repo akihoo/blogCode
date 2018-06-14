@@ -89,7 +89,7 @@ if __name__=='__main__':
     for i  in range(pop_size):#随机生成种群
         population.append(np.random.randint(0,2**chrom_length))
     res,pop=[],[]
-    for i in range(21):
+    for i in range(100):
         r,population=one_generation(population,chrom_length)
         res.append(r)
         if(i%5==0):
